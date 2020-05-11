@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Taller1"
+    }
+  },
+  "defaultProject": "Taller1",
+  "cli": {
+    "analytics": false
+  }
 }
