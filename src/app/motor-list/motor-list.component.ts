@@ -10,7 +10,7 @@ import { MotorService } from '../motor.service';
   styleUrls: ['./motor-list.component.css']
 })
 export class MotorListComponent implements OnInit {
-  motores: Observable<Motor[]>
+  motores: Motor=new Motor();
 
 
   constructor(private motorService: MotorService) { }

@@ -20,6 +20,11 @@ export class MotorService {
   } 
   registrar(motor: Motor): Observable<any>{
     console.log( "enviando..");
-    return this.http.post(this.urlBase+'/registrar',motor,{headers:this.httpHeaders} );
+    return this.http.post(this.urlBase+'/registrar',
+    motor,{headers:this.httpHeaders} );
   }
+  filtrarList (min :number , max:number): Observable<any>{
+    return this.http.get(this.urlBase+"/filtrar/"
+    +min+"/"+max).pipe(map(response =>response as Motor[]));
+  } 
 }

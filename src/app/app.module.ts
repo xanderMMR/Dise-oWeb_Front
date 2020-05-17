@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateMotorComponent } from './create-motor/create-motor.component';
 import { MotorListComponent } from './motor-list/motor-list.component';
+import { FiltrarComponent } from './filtrar/filtrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateMotorComponent,
-    MotorListComponent
+    MotorListComponent,
+    FiltrarComponent
   ],
   imports: [
     BrowserModule,
